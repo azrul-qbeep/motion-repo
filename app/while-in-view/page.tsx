@@ -17,7 +17,6 @@ export default function WhilInView() {
     [0, 1], 
     ["rgb(86, 1, 245)", "rgb(1, 245, 13)"]
   )
-
   return (
     <>
             <motion.div
