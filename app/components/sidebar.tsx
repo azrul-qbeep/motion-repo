@@ -12,7 +12,7 @@ interface Link {
 
 const links: Link[] = [
   { label: "Basic Motion", url: "/basic-motion" },
-  { label: "Gestures", url: "/gestures" },
+  { label: "Animation Controls", url: "/animation-controls" },
 ];
 
 export default function AppHeader() {

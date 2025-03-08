@@ -5,7 +5,7 @@ export default function BaseButton({
   onClick
 }: {
   children: React.ReactNode,
-  onClick: MouseEventHandler<HTMLButtonElement> | undefined
+  onClick?: MouseEventHandler<HTMLButtonElement> | undefined
 }) {
   return (
     <button

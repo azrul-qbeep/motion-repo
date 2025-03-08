@@ -1,9 +1,14 @@
 "use client";
 
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence, MotionConfig } from "motion/react";
 import { useState } from "react";
 import ExampleLayout from "../layouts/example-layout";
 import BaseButton from "../ui/button";
+
+const gestureButtonVariants = {
+  hover: { scale: 1.05 },
+  tap: { scale: 0.965, rotate: '2.5deg' }
+}
 
 export default function BasicMotion() {
   const [showBox, setShowBox] = useState(false);
@@ -18,6 +23,29 @@ export default function BasicMotion() {
           <BaseButton onClick={() => setShowMenu(!showMenu)}>
             Show Menu
           </BaseButton>
+          <MotionConfig
+            transition={{
+              duration: 0.125,
+              ease: 'easeInOut'
+            }}
+          >
+            <motion.button
+              variants={gestureButtonVariants}
+              whileHover="hover"
+              whileTap="tap"
+              className="bg-indigo-500 text-white rounded-lg px-3 py-1 cursor-pointer"
+            >
+              Gesture
+            </motion.button>
+            <motion.button
+              variants={gestureButtonVariants}
+              whileHover="hover"
+              whileTap="tap"
+              className="bg-pink-400 text-white rounded-lg px-3 py-1 cursor-pointer"
+            >
+              Gesture
+            </motion.button>
+          </MotionConfig>
         </div>
       }
     >
