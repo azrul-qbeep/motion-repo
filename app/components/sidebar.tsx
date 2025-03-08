@@ -13,6 +13,7 @@ interface Link {
 const links: Link[] = [
   { label: "Basic Motion", url: "/basic-motion" },
   { label: "Animation Controls", url: "/animation-controls" },
+  { label: "While in View", url: "/while-in-view" },
 ];
 
 export default function AppHeader() {
