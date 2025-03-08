@@ -19,17 +19,17 @@ export default function WhilInView() {
   )
   return (
     <>
-            <motion.div
-          style={{
-            scaleX: scaleX,
-            background: background,
-            transformOrigin: 'left',
-            position: 'sticky',
-            top: 0,
-            width: '100%',
-            height: '20px'
-          }}
-        ></motion.div>
+      <motion.div
+        style={{
+          scaleX: scaleX,
+          background: background,
+          transformOrigin: 'left',
+          position: 'sticky',
+          top: 0,
+          width: '100%',
+          height: '20px'
+        }}
+      ></motion.div>
       <div className="h-[150vh] flex gap-1 text-slate-500">
         Scroll down
         <ArrowDown />
