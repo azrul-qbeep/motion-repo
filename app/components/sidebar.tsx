@@ -16,6 +16,7 @@ const links: Link[] = [
   { label: "While in View", url: "/while-in-view" },
   { label: "Highlight Tabs", url: "/highlight-tabs" },
   { label: "Hover Button", url: "/hover-button" },
+  { label: "Hover Link", url: "/hover-link" },
 ];
 
 export default function AppHeader() {
