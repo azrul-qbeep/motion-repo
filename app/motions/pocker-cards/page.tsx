@@ -5,7 +5,7 @@ import { motion, useAnimationControls } from "motion/react";
 export default function PockerCards() {
   return (
     <div className="flex p-4 mt-96">
-      {[...Array(10)].map((_, i) => (
+      {[...Array(8)].map((_, i) => (
         <Card key={i} i={i} />
       ))}
     </div>

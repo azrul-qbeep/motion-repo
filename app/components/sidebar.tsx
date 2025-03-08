@@ -31,7 +31,7 @@ export default function AppHeader() {
     setActiveLink(link);
   };
   return (
-    <aside className="bg-white w-[200px]">
+    <aside className="bg-white min-w-[200px]">
       <nav className="sticky top-0 bottom-0 p-2 flex flex-col space-y-4">
         <Link
           href="/"
