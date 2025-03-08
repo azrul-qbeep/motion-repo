@@ -2,13 +2,13 @@
 
 import { motion, AnimatePresence, MotionConfig } from "motion/react";
 import { useState } from "react";
-import ExampleLayout from "../layouts/example-layout";
-import BaseButton from "../ui/button";
+import ExampleLayout from "../../layouts/example-layout";
+import BaseButton from "../../ui/button";
 
 const gestureButtonVariants = {
   hover: { scale: 1.05 },
-  tap: { scale: 0.965, rotate: '2.5deg' }
-}
+  tap: { scale: 0.965, rotate: "2.5deg" },
+};
 
 export default function BasicMotion() {
   const [showBox, setShowBox] = useState(false);
@@ -17,16 +17,14 @@ export default function BasicMotion() {
     <ExampleLayout
       menu={
         <div className="flex gap-2 mr-4">
-          <BaseButton onClick={() => setShowBox(!showBox)}>
-            Show Box
-          </BaseButton>
+          <BaseButton onClick={() => setShowBox(!showBox)}>Show Box</BaseButton>
           <BaseButton onClick={() => setShowMenu(!showMenu)}>
             Show Menu
           </BaseButton>
           <MotionConfig
             transition={{
               duration: 0.125,
-              ease: 'easeInOut'
+              ease: "easeInOut",
             }}
           >
             <motion.button

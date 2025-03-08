@@ -11,12 +11,12 @@ interface Link {
 }
 
 const links: Link[] = [
-  { label: "Basic Motion", url: "/basic-motion" },
-  { label: "Animation Controls", url: "/animation-controls" },
-  { label: "While in View", url: "/while-in-view" },
-  { label: "Highlight Tabs", url: "/highlight-tabs" },
-  { label: "Hover Button", url: "/hover-button" },
-  { label: "Hover Link", url: "/hover-link" },
+  { label: "Basic Motion", url: "/motions/basic-motion" },
+  { label: "Animation Controls", url: "/motions/animation-controls" },
+  { label: "While in View", url: "/motions/while-in-view" },
+  { label: "Highlight Tabs", url: "/motions/highlight-tabs" },
+  { label: "Hover Button", url: "/motions/hover-button" },
+  { label: "Hover Link", url: "/motions/hover-link" },
 ];
 
 export default function AppHeader() {
