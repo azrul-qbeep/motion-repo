@@ -18,6 +18,8 @@ const links: Link[] = [
   { label: "Hover Button", url: "/motions/hover-button" },
   { label: "Hover Link", url: "/motions/hover-link" },
   { label: "Spring Cards", url: "/motions/spring-cards" },
+  { label: "Spring Modal", url: "/motions/spring-modal" },
+  { label: "Image Cards", url: "/motions/image-cards" },
 ];
 
 export default function AppHeader() {
