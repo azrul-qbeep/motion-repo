@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import AppHeader from "./components/app-header";
+import Sidebar from "./components/sidebar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,10 +15,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased`}
+        className={`antialiased min-h-screen flex flex-col`}
       >
-        <AppHeader />
-        <main className="mx-auto max-w-7xl p-4">{children}</main>
+        <div className="flex flex-grow">
+          <Sidebar />
+          <div className="bg-teal-50 shadow-sm border border-gray-200 flex-grow my-2 mr-2 rounded-lg">
+            <main className="max-w-7xl p-4">{children}</main>
+          </div>
+        </div>
       </body>
     </html>
   );
