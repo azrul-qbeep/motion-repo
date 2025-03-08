@@ -20,6 +20,8 @@ const links: Link[] = [
   { label: "Spring Cards", url: "/motions/spring-cards" },
   { label: "Spring Modal", url: "/motions/spring-modal" },
   { label: "Image Cards", url: "/motions/image-cards" },
+  { label: "Chip Tabs", url: "/motions/chip-tabs" },
+  { label: "Pocker Cards", url: "/motions/pocker-cards"}
 ];
 
 export default function AppHeader() {
