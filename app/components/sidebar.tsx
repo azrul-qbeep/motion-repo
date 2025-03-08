@@ -17,6 +17,7 @@ const links: Link[] = [
   { label: "Highlight Tabs", url: "/motions/highlight-tabs" },
   { label: "Hover Button", url: "/motions/hover-button" },
   { label: "Hover Link", url: "/motions/hover-link" },
+  { label: "Spring Cards", url: "/motions/spring-cards" },
 ];
 
 export default function AppHeader() {
