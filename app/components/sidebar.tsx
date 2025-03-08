@@ -14,6 +14,7 @@ const links: Link[] = [
   { label: "Basic Motion", url: "/basic-motion" },
   { label: "Animation Controls", url: "/animation-controls" },
   { label: "While in View", url: "/while-in-view" },
+  { label: "Highlight Tabs", url: "/highlight-tabs" },
 ];
 
 export default function AppHeader() {
