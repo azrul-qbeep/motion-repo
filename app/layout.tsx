@@ -19,7 +19,7 @@ export default function RootLayout({
       >
         <div className="flex flex-grow">
           <Sidebar />
-          <div className="bg-teal-50 shadow-sm border border-gray-200 flex-grow my-2 mr-2 rounded-lg">
+          <div className="relative bg-teal-50 shadow-sm border border-gray-200 flex-grow my-2 mr-2 rounded-lg">
             <main className="max-w-7xl p-4">{children}</main>
           </div>
         </div>
